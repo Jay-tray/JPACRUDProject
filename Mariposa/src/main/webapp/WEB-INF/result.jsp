@@ -13,6 +13,10 @@ ${butterfly.id}
 
 <h2> test </h2>
 
+		<form action="home.do" method="GET">
+	<input type= "hidden" name="butterfly" value= ${butterfly.id } />
+	<input type= "submit" value="Main Menu" />
+	</form>
 	<form action="updateForm.do" method="GET">
 		<input type="hidden" value="${butterfly.id }" name="id" /> 
 		<input type="submit" value="Update Butterfly" />
