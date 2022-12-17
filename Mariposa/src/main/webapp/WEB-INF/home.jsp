@@ -10,7 +10,22 @@
 <body>
 <h4>A site dedicated to the tracking of butterflies, specifically the Monarch</h4>
 
-${id }
+
+
+	<form action="findById.do" method="GET">
+		Butterfly ID: <input type="text" name="id" /> 
+		<input type="submit" value="Show Butterfly" />
+	</form>
+	
+	<br>
+	<form action="createForm.do" method="GET">
+		<input type="hidden" name="id" /> 
+		<input type="submit" value="Add Butterfly" />
+	</form>
+	<br>
+
+		
+	
 
 </body>
 </html>

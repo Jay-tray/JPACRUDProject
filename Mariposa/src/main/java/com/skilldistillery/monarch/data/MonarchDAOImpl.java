@@ -13,14 +13,14 @@ import com.skilldistillery.monarch.entities.Monarch;
 @Service
 @Transactional
 public class MonarchDAOImpl implements MonarchDAO {
-	
+
 	@PersistenceContext
 	private EntityManager em;
 
 	@Override
 	public Monarch findById(int id) {
-		em.find(Monarch.class, id);
-		return null;
+		return em.find(Monarch.class, id);
+		
 	}
 
 	@Override
@@ -31,21 +31,43 @@ public class MonarchDAOImpl implements MonarchDAO {
 
 	@Override
 	public Monarch create(Monarch butterfly) {
-		
-		return null;
+		em.persist(butterfly);
+		em.flush();
+		return butterfly;
 	}
 
 	@Override
 	public Monarch update(int id, Monarch butterfly) {
-		
-		return null;
+		Monarch updated = em.find(Monarch.class, id);
+
+		if (updated != null) {
+			updated.setDate(butterfly.getDate());
+			updated.setCity(butterfly.getCity());
+			updated.setState(butterfly.getState());
+			updated.setLatitude(butterfly.getLatitude());
+			updated.setLongitude(butterfly.getLongitude());
+			updated.setAmount(butterfly.getAmount());
+			updated.setDescription(butterfly.getDescription());
+			updated.setImageUrl(butterfly.getImageUrl());
+			
+			em.persist(updated);
+			em.flush();
+		} 
+		return updated;
 	}
 
 	@Override
 	public boolean delete(int id) {
-		
-		return false;
-	}
+		boolean deleted = false;
 
+		Monarch butterfly = em.find(Monarch.class, id);
+
+		if (butterfly != null) {
+			em.remove(butterfly);
+			deleted = !em.contains(butterfly);
+
+		}
+		return deleted;
+	}
 
 }

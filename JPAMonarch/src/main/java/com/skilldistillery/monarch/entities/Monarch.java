@@ -1,5 +1,7 @@
 package com.skilldistillery.monarch.entities;
 
+import java.sql.Date;
+import java.time.LocalDateTime;
 import java.util.Objects;
 
 import javax.persistence.Column;
@@ -13,11 +15,19 @@ public class Monarch {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int id;
+	private int id; //NN
+	
+	private Date date; //NN
+	
+	private String city; //NN
 
-	private String city;
-
-	private String state;
+	private String state; //NN
+	
+	private double latitude;
+	
+	private double longitude;
+	
+	private int amount;
 
 	private String description;
 
@@ -36,6 +46,15 @@ public class Monarch {
 		this.id = id;
 	}
 
+	
+	public Date getDate() {
+		return date;
+	}
+
+	public void setDate(Date date) {
+		this.date = date;
+	}
+
 	public String getCity() {
 		return city;
 	}
@@ -50,6 +69,30 @@ public class Monarch {
 
 	public void setState(String state) {
 		this.state = state;
+	}
+
+	public double getLatitude() {
+		return latitude;
+	}
+
+	public void setLatitude(double latitude) {
+		this.latitude = latitude;
+	}
+
+	public double getLongitude() {
+		return longitude;
+	}
+
+	public void setLongitude(double longitude) {
+		this.longitude = longitude;
+	}
+
+	public int getAmount() {
+		return amount;
+	}
+
+	public void setAmount(int amount) {
+		this.amount = amount;
 	}
 
 	public String getDescription() {
@@ -70,8 +113,8 @@ public class Monarch {
 
 	@Override
 	public String toString() {
-		return "Monarch [id=" + id + ", city=" + city + ", state=" + state + ", description=" + description
-				+ ", imageUrl=" + imageUrl + "]";
+		return "Monarch [id=" + id + ", city=" + city + ", state=" + state + ", latitude=" + latitude + ", longitude="
+				+ longitude + ", amount=" + amount + ", description=" + description + ", imageUrl=" + imageUrl + "]";
 	}
 
 	@Override
