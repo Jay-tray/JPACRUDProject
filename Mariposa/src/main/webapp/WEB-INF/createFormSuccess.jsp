@@ -29,10 +29,20 @@
 
 	</c:choose>
 	
-		<p> Return to main menu</p>
+		
 	<form action="home.do" method="GET">
 	<input type= "hidden" name="butterfly" value= ${butterfly.id } />
 	<input type= "submit" value="Main Menu" />
+	</form>
+	<br>
+		<form action="updateForm.do" method="GET">
+		<input type="hidden" value="${butterfly.id }" name="id" /> 
+		<input type="submit" value="Update Butterfly" />
+	</form>
+	<br>
+	<form action="deleteForm.do" method="GET">
+		<input type="hidden" value="${butterfly.id }" name="id" /> 
+		<input type="submit" value="Delete Butterfly" />
 	</form>
 
 </body>

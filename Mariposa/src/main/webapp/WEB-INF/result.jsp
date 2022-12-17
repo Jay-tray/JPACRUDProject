@@ -17,5 +17,10 @@ ${butterfly.id}
 		<input type="hidden" value="${butterfly.id }" name="id" /> 
 		<input type="submit" value="Update Butterfly" />
 	</form>
+	<br>
+	<form action="deleteForm.do" method="GET">
+		<input type="hidden" value="${butterfly.id }" name="id" /> 
+		<input type="submit" value="Delete Butterfly" />
+	</form>
 </body>
 </html>
