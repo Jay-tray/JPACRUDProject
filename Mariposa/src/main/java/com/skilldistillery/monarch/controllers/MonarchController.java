@@ -53,4 +53,11 @@ public class MonarchController {
 	    model.addAttribute("butterfly", bfly);
 	    return "butterflyUpdated";
    }
+   
+   @RequestMapping("deleteForm.do")
+   		public String deleteButterfly(int id, Model model) {
+	   	boolean butterfly = dao.delete(id);
+	   	model.addAttribute("butterfly", butterfly);
+	   	return "butterflyDeleted";
+   }
 }

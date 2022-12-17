@@ -23,9 +23,15 @@
 		<input type="submit" value="Add Butterfly" />
 	</form>
 	<br>
-
-		
-	
-
+ 
+  	<form action="updateForm.do" method="GET">
+		Update Butterfly by ID<input type="text" name="id" /> 
+		<input type="submit" value="Update Butterfly" />
+	</form>		
+	<br>
+	<form action="deleteForm.do" method="GET">
+		Delete by ID<input type="text" name="id" /> 
+		<input type="submit" value="Delete Butterfly" />
+	</form>
 </body>
 </html>
