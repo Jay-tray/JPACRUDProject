@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+
+.header {
+   padding: 20px;
+   text-align: center;
+   font-family: Century-Gothic;
+}
+
+h4 {
+  color: #FFF;
+  font-size: 2em;
+  padding-top: 100px;
+  width: 100%;
+}
+
+.image {
+  background-image: url("https://natureconservancy-h.assetsadobe.com/is/image/content/dam/tnc/nature/en/photos/shutterstock_1512536354.jpg?crop=0%2C317%2C2664%2C1465&wid=4000&hei=2200&scl=0.666");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 700px;
+  opacity: 0.5;
+}
+
+.options {
+	text-align: center;
+}

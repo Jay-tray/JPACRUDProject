@@ -6,8 +6,11 @@
 <head>
 <meta charset="UTF-8">
 <title>Butterfly result:</title>
+<%@ include file="bootstrapHead.jsp" %>
 </head>
 <body>
+
+<div class='results'>
 <h3>Your butterfly's information is:</h3>
 	<ul id="Your butterfly's information is:" >
 			    <li>${butterfly.id }</li>
@@ -21,7 +24,8 @@
 			    <li>${butterfly.imageUrl }</li>
 
 </ul>
-
+</div>
+<div>
 		<form action="home.do" method="GET">
 	<input type= "hidden" name="butterfly" value= ${butterfly.id } />
 	<input type= "submit" value="Main Menu" />
@@ -36,5 +40,7 @@
 		<input type="hidden" value="${butterfly.id }" name="id" /> 
 		<input type="submit" value="Delete Butterfly" />
 	</form>
+	</div>
+	<%@ include file="bootstrapFoot.jsp" %>
 </body>
 </html>
