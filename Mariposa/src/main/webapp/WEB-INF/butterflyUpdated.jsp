@@ -12,7 +12,7 @@
 <div class="container-fluid">
 	<c:choose>
 		<c:when test="${! empty butterfly}">
-			<p>Butterfly updated successfully</p>
+			<h3>Butterfly updated successfully</h3>
 			<ul id="Your butterfly's information is:" >
 			    <li>${butterfly.id }</li>
 			    <li>${butterfly.date }</li>

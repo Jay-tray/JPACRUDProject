@@ -29,9 +29,13 @@
 	</c:when>
 	<c:otherwise>
 			<br>
-   	 		 No Butterfly available.
+   	 		 <h4>No Butterfly available.</h4>
    		</c:otherwise>
    		</c:choose>
+   		<br>
+   		<br>
+   		<br>
+   		
 </div>
 <div>
 		<form action="home.do" method="GET">

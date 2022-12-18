@@ -4,7 +4,7 @@ body{
 }
 
 .results {
-	text-align: left;
+	text-align:left;
 }
 
 .growImage {
@@ -27,6 +27,10 @@ body{
 }
 
 .container-fluid {
-  text-align: center;	
+  text-align: left;	
   color: black;
+}
+
+.questionbank {
+	text-align: center;
 }

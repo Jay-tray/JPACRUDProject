@@ -9,7 +9,7 @@
 <%@ include file="bootstrapHead.jsp" %>
 </head>
 <body>
-<div class="container-fluid">
+<div>
 	<c:choose>
 		<c:when test="${! empty butterfly}">
 			<p>Butterfly created successfully</p>

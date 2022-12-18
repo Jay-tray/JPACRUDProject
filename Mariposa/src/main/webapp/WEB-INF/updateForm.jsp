@@ -13,8 +13,11 @@
 	<div class='perchImage'>
 	  <p class='caption'>Butterfly perched</p>
   	</div>
-  	
-<div class="container-fluid">
+  	›
+<div class="questionbank">
+<c:choose>
+		<c:when test="${! empty butterfly}">
+			<p>Update butterfly ${butterfly.id }</p>
 <form action="butterflyUpdated.do" method="POST">
 	<input type="hidden" name="id" value="${butterfly.id}" />
 	
@@ -46,7 +49,16 @@
 	 <br>
     <input type= "submit" value= "Update entry">
      <br>
+     
 </form>
+     </c:when>
+		<c:otherwise>
+   	 		No Butterfly by that ID was found.
+   		</c:otherwise>
+
+	</c:choose>
+     
+     
     </div> 
     <%@ include file="bootstrapFoot.jsp" %>
 </body>
