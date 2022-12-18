@@ -9,7 +9,11 @@
 <%@ include file="bootstrapHead.jsp" %>
 </head>
 <body>
-<h1>${butterfly } </h1>
+
+	<div class='perchImage'>
+	  <p class='caption'>Butterfly perched</p>
+  	</div>
+  	
 <div class="container-fluid">
 <form action="butterflyUpdated.do" method="POST">
 	<input type="hidden" name="id" value="${butterfly.id}" />

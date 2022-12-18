@@ -9,7 +9,13 @@
 <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+
+	<div class='growImage'>
+	  <p class='caption'>Life cycle</p>
+  	</div>
+  	
 <div class="container-fluid">
+<h3>Insert Information below:</h3>
 <form action="butterflyAdded.do" method="POST">
 	<label for="date">Date (YYYY-MM-DD)</label>
 	<input type="text" name="date" required="required" value="" />

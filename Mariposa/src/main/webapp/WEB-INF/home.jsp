@@ -10,6 +10,9 @@
 </head>
 <body>
 
+
+
+
 	<div class="header">
 		<h1>Mariposa</h1>
 		<h3>A site dedicated to the tracking of butterflies, specifically the Monarch</h3>
@@ -18,18 +21,20 @@
   	<div class='image'>
   		  <p class='caption'>Monarch Butterfly</p>
   	</div>
-
+    <br>
+    <br>
 	<div class='options'>
+		<form action="createForm.do" method="GET">
+			<input type="hidden" name="id" /> 
+			<input type="submit" value="Add Butterfly" />
+		</form>
+		<br>
+	
 		<form action="findById.do" method="GET">
 			Butterfly ID: <input type="text" name="id" /> 
 			<input type="submit" value="Show Butterfly" />
 		</form>
 	
-		<br>
-		<form action="createForm.do" method="GET">
-			<input type="hidden" name="id" /> 
-			<input type="submit" value="Add Butterfly" />
-		</form>
 		<br>
  
   		<form action="updateForm.do" method="GET">

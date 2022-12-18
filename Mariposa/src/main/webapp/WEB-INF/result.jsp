@@ -11,8 +11,10 @@
 <body>
 
 <div class='results'>
-<h3>Your butterfly's information is:</h3>
-	<ul id="Your butterfly's information is:" >
+<c:choose>
+	<c:when test="${! empty butterfly}">
+		<h3>Your butterfly's information is:</h3>
+		<ul id="Your butterfly's information is:" >
 			    <li>${butterfly.id }</li>
 			    <li>${butterfly.date }</li>
 			    <li>${butterfly.city }</li>
@@ -23,7 +25,13 @@
 			    <li>${butterfly.description }</li>
 			    <li>${butterfly.imageUrl }</li>
 
-</ul>
+		</ul>
+	</c:when>
+	<c:otherwise>
+			<br>
+   	 		 No Butterfly available.
+   		</c:otherwise>
+   		</c:choose>
 </div>
 <div>
 		<form action="home.do" method="GET">
