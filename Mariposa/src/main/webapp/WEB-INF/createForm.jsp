@@ -5,8 +5,11 @@
 <head>
 <meta charset="UTF-8">
 <title></title>
+<%@ include file="bootstrapHead.jsp" %>
+<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+<div class="container-fluid">
 <form action="butterflyAdded.do" method="POST">
 	<label for="date">Date (YYYY-MM-DD)</label>
 	<input type="text" name="date" required="required" value="" />
@@ -37,5 +40,8 @@
     <input type= "submit" value= "Add entry">
      <br>
 </form>
+</div>
+
+<%@ include file="bootstrapFoot.jsp" %>
 </body>
 </html>

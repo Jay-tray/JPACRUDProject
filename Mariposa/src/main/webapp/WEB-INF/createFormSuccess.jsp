@@ -6,8 +6,10 @@
 <head>
 <meta charset="UTF-8">
 <title>Butterfly Added</title>
+<%@ include file="bootstrapHead.jsp" %>
 </head>
 <body>
+<div class="container-fluid">
 	<c:choose>
 		<c:when test="${! empty butterfly}">
 			<p>Butterfly created successfully</p>
@@ -28,7 +30,7 @@
    		</c:otherwise>
 
 	</c:choose>
-	
+</div>	
 		
 	<form action="home.do" method="GET">
 	<input type= "hidden" name="butterfly" value= ${butterfly.id } />
@@ -45,5 +47,6 @@
 		<input type="submit" value="Delete Butterfly" />
 	</form>
 
+<%@ include file="bootstrapFoot.jsp" %>
 </body>
 </html>

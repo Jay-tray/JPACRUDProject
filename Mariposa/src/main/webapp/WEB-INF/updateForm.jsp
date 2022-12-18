@@ -6,9 +6,11 @@
 <head>
 <meta charset="UTF-8">
 <title>Update Butterfly Information</title>
+<%@ include file="bootstrapHead.jsp" %>
 </head>
 <body>
 <h1>${butterfly } </h1>
+<div class="container-fluid">
 <form action="butterflyUpdated.do" method="POST">
 	<input type="hidden" name="id" value="${butterfly.id}" />
 	
@@ -41,5 +43,7 @@
     <input type= "submit" value= "Update entry">
      <br>
 </form>
+    </div> 
+    <%@ include file="bootstrapFoot.jsp" %>
 </body>
 </html>

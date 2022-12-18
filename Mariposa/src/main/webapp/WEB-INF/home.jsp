@@ -6,12 +6,13 @@
 <head>
 <meta charset="UTF-8">
 <title>Mariposa</title>
+<%@ include file="bootstrapHead.jsp" %>
 </head>
 <body>
 <h4>A site dedicated to the tracking of butterflies, specifically the Monarch</h4>
 
 
-
+<div class="container-fluid">
 	<form action="findById.do" method="GET">
 		Butterfly ID: <input type="text" name="id" /> 
 		<input type="submit" value="Show Butterfly" />
@@ -33,5 +34,9 @@
 		Delete by ID<input type="text" name="id" /> 
 		<input type="submit" value="Delete Butterfly" />
 	</form>
+	</div>
+	
+<%@ include file="bootstrapFoot.jsp" %>
+	
 </body>
 </html>
