@@ -21,10 +21,10 @@ After selecting the desired option the user is vectored to .jsp pages that allow
 - JUNIT testing
 
 ## Lessons Learned
-- Understanding of the contoller class and how the relationship between jsps became much more clear to me through doing this project. Leaving behind the ModelAndView and using the String return method was significantly easier for me to digest as I was writing code. Further practice implementing .addAttribute and other features will help speed up future projects.
-- Up until this projet I had very minimal interaction with CSS and Bootstrap. Getting to start using basic css detailing was very fun and I really felt like I was able to display the intent of what my project.
-- This was my first time also using JUNIT tests is a meaningful way. I am becoming more comfortable with writing them and understanding what they can prevent in error control.
-- MySQLWorkbench proved to be a very valuable addition to our toolbox. I uploaded a .csv file with an inital database and played around with building out my table. Its functionality is great compared to simply using the terminal. Although I still returned to the terminal to confirm DB add, updates and deletes were successful. 
+- Understanding of the contoller class and how the relationship between jsps operates became much more clear to me through doing this project. Leaving behind the ModelAndView and using the String return method was significantly easier for me to digest as I was writing code. Further practice implementing .addAttribute and other features will help speed up future projects.
+- Up until this projet I had very minimal interaction with CSS and Bootstrap. Getting to start using basic css detailing was very fun and I really felt like I was able to display the intent of my project.
+- This was my first time also using JUNIT tests is a meaningful way. I am becoming more comfortable with writing them and understanding how they can assist in error control and time management.
+- MySQLWorkbench proved to be a very valuable addition to the toolbox. I uploaded a .csv file with an inital database and played around with building out my table. Its functionality is great compared to simply using the terminal. Although I still returned to the terminal to confirm DB add, updates and deletes were successful. 
 
 ## How to Run
 This program needs compliled to run it on localhost or EC2. Download the repository to a local directory. Open Spring Tool Suite or your IDE of choice and import the project. After it is compiled click run and follow prompts. 
