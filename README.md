@@ -27,6 +27,11 @@ After selecting the desired option the user is vectored to .jsp pages that allow
 - MySQLWorkbench proved to be a very valuable addition to the toolbox. I uploaded a .csv file with an inital database and played around with building out my table. Its functionality is great compared to simply using the terminal. Although I still returned to the terminal to confirm DB add, updates and deletes were successful. 
 
 ## How to Run
+
+You can access this program through the following link: http://18.233.209.105:8080/Mariposa/home.do?butterfly=%2F
+
+or
+
 This program needs compliled to run it on localhost or EC2. Download the repository to a local directory. Open Spring Tool Suite or your IDE of choice and import the project. After it is compiled click run and follow prompts. 
 
 ## Future goals
